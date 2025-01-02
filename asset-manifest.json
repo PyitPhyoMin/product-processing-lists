@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/6m-software-2.7-cond-render-lists-assignment/static/css/main.52cdc908.css",
+    "main.js": "/6m-software-2.7-cond-render-lists-assignment/static/js/main.75befe2f.js",
+    "index.html": "/6m-software-2.7-cond-render-lists-assignment/index.html",
+    "main.52cdc908.css.map": "/6m-software-2.7-cond-render-lists-assignment/static/css/main.52cdc908.css.map",
+    "main.75befe2f.js.map": "/6m-software-2.7-cond-render-lists-assignment/static/js/main.75befe2f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.52cdc908.css",
+    "static/js/main.75befe2f.js"
+  ]
+}
