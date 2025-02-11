@@ -20,8 +20,8 @@ function Card({
       <div className={styles.price}>{`$ ${ctx.price}`} each</div>
       <div className={styles.discount}>{`Discount: ${ctx.discount}%`}</div>
       <div className={styles.form}>
-        <Input value={ctx.name} label="Product Name" onChange={ctx.handlerChangeName} />
-        <Input value={ctx.price} label="Price" onChange={ctx.handlerChangePrice} />
+        <Input type="text" value={ctx.name} label="Product Name" onChange={ctx.handlerChangeName} />
+        <Input type="text" value={ctx.price} label="Price" onChange={ctx.handlerChangePrice} />
       </div>
       <Button label="Add Product" onClick={handlerAddProduct} />
     </div>

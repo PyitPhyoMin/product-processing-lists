@@ -7,7 +7,7 @@ import ModeContext from "../context/ModeContext";
 function ViewList({ list, sum, handlerDeleteItem, handlerEditItem, editModeMessage }) {
   const modeCtx = useContext(ModeContext);
   return (
-    <div>
+    <div className={styles.tableSection}>
       <table className={`${styles.table} ${!modeCtx.isLight && styles.dark}`}>
         <thead>
           <tr>

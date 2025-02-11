@@ -1,20 +1,36 @@
+.tableSection{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .table {
   border-collapse: collapse;
-  margin: 25px 0;
+  margin: 7% 0 5%;
+  padding: 0;
   font-size: 0.9em;
   font-family: sans-serif;
-  min-width: 400px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.15);
+}
+@media screen and (max-width: 500px) {
+  .table{
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 400px) {
+  .table{
+    font-size: 0.42em;
+
+  }
 }
 .table thead tr {
   background-color: #5287e3;
   color: #ffffff;
-  text-align: right;
+  text-align: center;
 }
 .table th,
 .table td {
-  padding: 12px 15px;
-  text-align: right;
+  padding: 0.5rem 1rem;
+  text-align: center;
 }
 .table th:nth-child(1),
 .table td:nth-child(1) {
@@ -38,10 +54,23 @@
   font-weight: bold;
   font-size: 1.25rem;
 }
-/* .dark tbody tr:nth-of-type(even) {
-  background-color: #b4b3b3;
-  color: black;
-} */
+@media screen and (max-width: 500px) {
+  .sum{
+    font-size: 0.8rem;
+  }
+  .containerSum{
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .sum{
+    font-size: 0.6rem;
+
+  }
+  .containerSum{
+    font-size: 0.6rem;
+  }
+}
 .table td {
   cursor: pointer;
 }
@@ -49,4 +78,16 @@
   color: rgb(118, 78, 70);
   font-size: 1rem;
   margin: 0;
+}
+@media screen and (max-width: 500px) {
+  .editModeMessage {
+    font-size: 0.8rem;
+    margin-left: 0.2rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .editModeMessage {
+    font-size: 0.6rem;
+    margin-left: 1rem;
+  }
 }

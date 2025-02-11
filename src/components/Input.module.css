@@ -11,3 +11,9 @@
   margin-left: 0.5rem;
   border: 1px solid #a3a3a3
 }
+@media screen and (max-width: 500px) {
+  .input {
+    font-size: 0.9rem;
+  }
+
+}

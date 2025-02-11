@@ -24,3 +24,22 @@
 .count {
   font-size: 2rem;
 }
+@media screen and (max-width: 500px) {
+  .name {
+    font-size: 0.9rem;
+  }
+  .price {
+    font-size: 0.9rem;
+  }
+  .discount {
+    font-size: 0.8rem;
+  }
+  .count {
+    font-size: 1.2rem;
+  }
+  .form
+  {
+    font-size: 0.9rem;
+  }
+  
+}

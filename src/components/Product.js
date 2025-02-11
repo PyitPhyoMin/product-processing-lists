@@ -7,7 +7,6 @@ import ViewList from "./ViewList";
 
 import ProductContext from "../context/ProductContext";
 import ModeContext from "../context/ModeContext";
-import Toggle from "./Toggle";
 import EditForm from "./EditForm";
 
 function Product() {
@@ -118,7 +117,6 @@ function Product() {
 
   return (
     <div className={`${styles.container} ${modeCtx.isDark && styles.dark}`}>
-      <Toggle />
       <Card handlerAddProduct={handlerAddProduct} />
       <ViewList
         list={list}
