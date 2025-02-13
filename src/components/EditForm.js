@@ -25,14 +25,14 @@ function EditForm({
             </thead>
             <tbody>
               <tr>
-                <td>
+                <td data-label="Product:">
                   <input
                     value={form.name}
                     type="text"
                     onChange={(e) => handlerUpdateForm(e, "name")}
                   />
                 </td>
-                <td>
+                <td data-label="Qty:">
                   <input
                     value={form.quantity}
                     type="number"
@@ -40,7 +40,7 @@ function EditForm({
                     onChange={(e) => handlerUpdateForm(e, "quantity")}
                   />
                 </td>
-                <td>
+                <td data-label="Price:">
                   <input
                     value={form.price}
                     type="number"
@@ -49,7 +49,7 @@ function EditForm({
                     onChange={(e) => handlerUpdateForm(e, "price")}
                   />
                 </td>
-                <td>
+                <td data-label="Disc%:">
                   <input
                     value={form.discount}
                     type="number"

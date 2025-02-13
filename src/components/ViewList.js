@@ -23,13 +23,13 @@ function ViewList({ list, sum, handlerDeleteItem, handlerEditItem, editModeMessa
         <tbody>
           {list.map((item) => (
             <tr key={item.id}>
-              <td>{item.name}</td>
-              <td>{item.quantity}</td>
-              <td>{item.price}</td>
-              <td>{item.discount}</td>
-              <td>{item.total.toFixed(2)}</td>
-              <td onClick={() => handlerEditItem(item.id)}>✏️</td>
-              <td onClick={() => handlerDeleteItem(item.id)}>❌</td>
+              <td data-label="Product:">{item.name}</td>
+              <td data-label="Qty:">{item.quantity}</td>
+              <td data-label="Price:">{item.price}</td>
+              <td data-label="Disc%:">{item.discount}</td>
+              <td data-label="Total$:">{item.total.toFixed(2)}</td>
+              <td data-label="Edit:" onClick={() => handlerEditItem(item.id)}>✏️</td>
+              <td data-label="Delete:" onClick={() => handlerDeleteItem(item.id)}>❌</td>
             </tr>
           ))}
         </tbody>

@@ -13,13 +13,39 @@
 }
 @media screen and (max-width: 500px) {
   .table{
-    font-size: 0.6em;
+    font-size: 0.9em;
   }
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+  thead tr {
+    display: none;
+  }
+  tr {
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 15rem;
+    text-align: right;
+  }
+  td {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+  }
+  td:last-child {
+    border-bottom: none;
+  }
+  td::before {
+    content: attr(data-label);
+    font-weight: bold;
+  }
+
 }
 @media screen and (max-width: 400px) {
   .table{
-    font-size: 0.42em;
-
+    font-size: 0.8em;
   }
 }
 .table thead tr {
@@ -56,19 +82,19 @@
 }
 @media screen and (max-width: 500px) {
   .sum{
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
   .containerSum{
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 }
 @media screen and (max-width: 400px) {
   .sum{
-    font-size: 0.6rem;
+    font-size: 0.8rem;
 
   }
   .containerSum{
-    font-size: 0.6rem;
+    font-size: 0.8rem;
   }
 }
 .table td {
@@ -82,12 +108,12 @@
 @media screen and (max-width: 500px) {
   .editModeMessage {
     font-size: 0.8rem;
-    margin-left: 0.2rem;
+    max-width: 15rem;
   }
 }
 @media screen and (max-width: 400px) {
   .editModeMessage {
-    font-size: 0.6rem;
-    margin-left: 1rem;
+    font-size: 0.8rem;
+    max-width: 15rem;
   }
 }

@@ -22,13 +22,5 @@
     border-width: 1px;
   }
 }
-  @media screen and (max-width : 400px) {
-    .button{
-      font-size: 0.6rem;
-    }
-    .button:hover {
-      border-width: 1px;
-    }
-  }
 
 
